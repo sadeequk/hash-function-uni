@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hash Function</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Hash Function</h1>
+
+      <div class="section" id="sender">
+        <h2>Sender</h2>
+        <textarea id="sender-message" placeholder="Enter your message here"></textarea>
+        <input type="file" id="sender-file" />
+        <button id="generate-hash-btn">Generate Hash</button>
+        <div id="sender-output">
+          <p>Generated Hash:</p>
+          <p id="generated-hash"></p>
+        </div>
+        <button id="send-message-btn">Send Message</button>
+      </div>
+
+      <div class="section" id="man-in-the-middle">
+        <h2>Man in the Middle</h2>
+        <textarea id="intercepted-message" placeholder="Message to modify"></textarea>
+        <textarea id="intercepted-hash" placeholder="Hash to modify"></textarea>
+        <button id="modify-message-btn">Modify and Send</button>
+      </div>
+
+      <div class="section" id="receiver">
+        <h2>Receiver</h2>
+        <p>Received Message:</p>
+        <p id="received-message"></p>
+        <p>Received Hash:</p>
+        <p id="received-hash"></p>
+        <button id="verify-hash-btn">Verify Hash</button>
+        <div id="receiver-output">
+          <p>Verification Result:</p>
+          <p id="verification-result"></p>
+        </div>
+      </div>
+    </div>
+    <script src="./index.js"></script>
+  </body>
+</html>
